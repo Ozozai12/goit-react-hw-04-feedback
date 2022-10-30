@@ -15,7 +15,7 @@ const Statistics = ({ bad, neutral, good, total, positive }) => {
       <p>
         Total: <span>{total}</span>
       </p>
-      {positive && (
+      {positive !== 0 && (
         <p>
           Positive feedback: <span>{positive.toFixed(0)}%</span>
         </p>
